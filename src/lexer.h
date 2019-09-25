@@ -23,7 +23,7 @@ class Lexer {
             // スペースをスキップ
             while (isspace(lastChar))
                 lastChar = getNextChar(iFile);
-
+            )
             // TODO 1.3: 数字のパーシングを実装してみよう
             // 今読んでいる文字(lastChar)が数字だった場合(isdigit(lastChar) == true)は、
             // 数字が終わるまで読み、その数値をnumValにセットする。
@@ -40,7 +40,9 @@ class Lexer {
             // 7. このトークンは数値だったので、tok_numberをreturnする。
             //
             // ここに実装して下さい
+            if (sdigit(lastChar) == true ){
 
+            }
             // TODO 1.4: コメントアウトを実装してみよう
             // '#'を読んだら、その行の末尾まで無視をするコメントアウトを実装する。
             // 1. 今の文字(LastChar)が'#'かどうかをチェック
